@@ -1,0 +1,26 @@
+name: learn_quran
+description: Learn to recite the Quran properly and understand it through its language.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.9.0 <4.0.0"  # Flutter 3.35+ (RadioGroup)
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1          # Amiri Quran until the KFGQPC Uthmani font is bundled
+  shared_preferences: ^2.3.2    # XP, streak, settings
+  record: ^5.1.2                # microphone -> 16 kHz PCM stream
+  web_socket_channel: ^3.0.1    # live stream to the checker server
+  just_audio: ^0.9.40           # model recitation playback
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/quran/

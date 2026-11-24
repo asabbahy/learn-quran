@@ -1,0 +1,15 @@
+# Flutter / Dart
+app/.dart_tool/
+app/build/
+app/.flutter-plugins*
+app/pubspec.lock
+*.iml
+.idea/
+# Generated Quran data (rebuild with tools/build_data.py)
+app/assets/quran/*.json
+# Python
+__pycache__/
+*.pyc
+.venv/
+# Corpus file (download yourself, licence requires it)
+quranic-corpus-morphology-*.txt
